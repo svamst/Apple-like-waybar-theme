@@ -1,0 +1,73 @@
+@import "themes/light.css";
+
+/* DEFINE BASIC SHIT */
+* {
+    font-size:16px;
+    font-weight: bold;
+    font-family: "Inter.ttc";
+    background: @background;
+}
+
+/* DEFINE VISUAL SHIT */
+#custom-arch {
+    color: @text;
+    font-size: 20px;
+}
+/**********************/
+#workspaces {
+    padding: 0px 5px;
+}
+#workspaces button {
+    all:unset;
+    padding: 0px 5px;
+    color: @inactive_workspace;
+    border: none;
+    transition: all .2s ease;
+}
+#workspaces button.active {
+    color: @active_workspace;
+    border: none;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+}
+#workspaces button.empty {
+    color: @empty_workspace;
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .2);
+}
+#workspaces button.empty:hover {
+    /*smooth color transition when the cursor is on the circle*/
+    color: rgba(0,0,0,0);
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
+    transition: all 1s ease;
+}
+#workspaces button.empty.active {
+    color: @active_workspace; 
+    border: none;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+}
+/**********************/
+#hyprland-window {
+    color: @text;
+}
+/**********************/
+#cpu {
+    color: @text;
+}
+/**********************/
+#memory {
+    color: @text;
+}
+/**********************/
+#battery {
+    color: @text;
+}
+/**********************/
+#network {
+    color: @text;
+}
+/**********************/
+#clock {
+    color: @text;
+}
+/**********************/

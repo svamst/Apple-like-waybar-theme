@@ -1,0 +1,56 @@
+{
+    "hyprland/window": {
+	    "format": "{}",
+	    "tooltip": false
+    },
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "active": "",
+            "default": "",
+            "empty": ""
+        },
+        "persistent-workspaces": {
+            "*": [ 1,2,3,4,5 ]
+        }
+    },
+    "tray": {
+    	"icon-size": 16,
+    	"spacing": 10,
+	    "tooltip": false
+    },
+    "clock": {
+	    "format": "{:%a, %d.%m, %H:%M} ",
+	    "tooltip": false,
+	    "on-click": "alacritty -e htop"
+    },
+    "cpu": {
+        "format": " ",
+	    "format-alt": "CPU: {usage}%",
+        "tooltip": false
+    },
+    "memory": {
+	    "format": " ",
+        "format-alt": "RAM: {used}GiB",
+	    "tooltip": false
+    },
+    "battery": {
+        "format": "{icon}",
+        "format-alt": "{capacity}%  {icon}",
+        "format-icons": [" ", " ", " ", " ", " "],
+	    "tooltip": false
+    },
+    "network": {
+        "format-wifi": "󰖩 ",
+        "format-disconnected": "󰖪 ",
+	    "format-alt": "Net: {essid}",
+	    "on-click-right": "alacritty -e sudo iwctl",
+	    "tooltip": false
+    },
+    "custom/arch": {
+	    "format": "  ",
+	    "tooltip": false,
+        "on-click": "swaync-client -t -sw",
+        "escape": true
+	}
+}

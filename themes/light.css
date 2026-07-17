@@ -1,0 +1,5 @@
+@define-color background #FFFFFF; /*white*/
+@define-color empty_workspace #B7B9B4; /*bright gray*/
+@define-color inactive_workspace #707070; /*a bit darker then the bright 1*/
+@define-color active_workspace #FF0000; /*red*/
+@define-color text #000000; /*black*/
